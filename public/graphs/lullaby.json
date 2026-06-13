@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    { "id": "C",  "label": "C",  "type": "maj", "x": 400, "y": 160 },
+    { "id": "G",  "label": "G",  "type": "maj", "x": 640, "y": 400 },
+    { "id": "Bb", "label": "B♭", "type": "maj", "x": 400, "y": 640 },
+    { "id": "F",  "label": "F",  "type": "maj", "x": 160, "y": 400 }
+  ],
+  "edges": [
+    { "from": "C",  "to": "F",  "kind": "custom" },
+    { "from": "C",  "to": "G",  "kind": "custom" },
+    { "from": "C",  "to": "Bb", "kind": "custom" },
+    { "from": "F",  "to": "C",  "kind": "resolve" },
+    { "from": "G",  "to": "C",  "kind": "resolve" },
+    { "from": "Bb", "to": "C",  "kind": "resolve" },
+    { "from": "F",  "to": "G",  "kind": "custom" },
+    { "from": "Bb", "to": "F",  "kind": "custom" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    { "id": "C",   "label": "C",   "type": "maj", "x": 400, "y": 140 },
+    { "id": "C+",  "label": "C+",  "type": "aug", "x": 584, "y": 216 },
+    { "id": "F",   "label": "F",   "type": "maj", "x": 660, "y": 400 },
+    { "id": "F+",  "label": "F+",  "type": "aug", "x": 584, "y": 584 },
+    { "id": "Bb",  "label": "B♭",  "type": "maj", "x": 400, "y": 660 },
+    { "id": "Bb+", "label": "B♭+", "type": "aug", "x": 216, "y": 584 },
+    { "id": "Eb",  "label": "E♭",  "type": "maj", "x": 140, "y": 400 },
+    { "id": "Eb+", "label": "E♭+", "type": "aug", "x": 216, "y": 216 }
+  ],
+  "edges": [
+    { "from": "C",   "to": "C+",  "kind": "color",  "bidirectional": true },
+    { "from": "F",   "to": "F+",  "kind": "color",  "bidirectional": true },
+    { "from": "Bb",  "to": "Bb+", "kind": "color",  "bidirectional": true },
+    { "from": "Eb",  "to": "Eb+", "kind": "color",  "bidirectional": true },
+    { "from": "C",   "to": "F",   "kind": "custom" },
+    { "from": "F",   "to": "Bb",  "kind": "custom" },
+    { "from": "Bb",  "to": "Eb",  "kind": "custom" },
+    { "from": "Eb",  "to": "C",   "kind": "resolve" },
+    { "from": "C+",  "to": "F",   "kind": "custom" },
+    { "from": "F+",  "to": "Bb",  "kind": "custom" },
+    { "from": "Bb+", "to": "Eb",  "kind": "custom" },
+    { "from": "Eb+", "to": "C",   "kind": "resolve" }
+  ]
+}

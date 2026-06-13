@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    { "id": "C",  "label": "C",  "type": "maj",  "x": 400, "y": 160 },
+    { "id": "G",  "label": "G",  "type": "maj",  "x": 628, "y": 274 },
+    { "id": "G7", "label": "G7", "type": "dom7", "x": 541, "y": 594 },
+    { "id": "D7", "label": "D7", "type": "dom7", "x": 259, "y": 594 },
+    { "id": "F",  "label": "F",  "type": "maj",  "x": 172, "y": 274 }
+  ],
+  "edges": [
+    { "from": "C",  "to": "F",  "kind": "custom" },
+    { "from": "F",  "to": "C",  "kind": "resolve" },
+    { "from": "C",  "to": "G",  "kind": "custom" },
+    { "from": "G",  "to": "C",  "kind": "resolve" },
+    { "from": "G",  "to": "G7", "kind": "tension" },
+    { "from": "G7", "to": "G",  "kind": "tension" },
+    { "from": "G7", "to": "C",  "kind": "resolve" },
+    { "from": "D7", "to": "G",  "kind": "resolve" },
+    { "from": "D7", "to": "G7", "kind": "chain" },
+    { "from": "F",  "to": "G7", "kind": "custom" },
+    { "from": "C",  "to": "D7", "kind": "custom" }
+  ]
+}

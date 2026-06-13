@@ -1,0 +1,690 @@
+{
+  "nodes": [
+    {
+      "id": "C",
+      "label": "C",
+      "type": "maj",
+      "x": 400,
+      "y": 80
+    },
+    {
+      "id": "C+",
+      "label": "C+",
+      "type": "aug",
+      "x": 337.9,
+      "y": 168.2
+    },
+    {
+      "id": "C7",
+      "label": "C7",
+      "type": "dom7",
+      "x": 354.7,
+      "y": 231
+    },
+    {
+      "id": "G",
+      "label": "G",
+      "type": "maj",
+      "x": 560,
+      "y": 122.9
+    },
+    {
+      "id": "G+",
+      "label": "G+",
+      "type": "aug",
+      "x": 462.1,
+      "y": 168.2
+    },
+    {
+      "id": "G7",
+      "label": "G7",
+      "type": "dom7",
+      "x": 445.3,
+      "y": 231
+    },
+    {
+      "id": "D",
+      "label": "D",
+      "type": "maj",
+      "x": 677.1,
+      "y": 240
+    },
+    {
+      "id": "D+",
+      "label": "D+",
+      "type": "aug",
+      "x": 569.7,
+      "y": 230.3
+    },
+    {
+      "id": "D7",
+      "label": "D7",
+      "type": "dom7",
+      "x": 523.7,
+      "y": 276.3
+    },
+    {
+      "id": "A",
+      "label": "A",
+      "type": "maj",
+      "x": 720,
+      "y": 400
+    },
+    {
+      "id": "A+",
+      "label": "A+",
+      "type": "aug",
+      "x": 631.8,
+      "y": 337.9
+    },
+    {
+      "id": "A7",
+      "label": "A7",
+      "type": "dom7",
+      "x": 569,
+      "y": 354.7
+    },
+    {
+      "id": "E",
+      "label": "E",
+      "type": "maj",
+      "x": 677.1,
+      "y": 560
+    },
+    {
+      "id": "E+",
+      "label": "E+",
+      "type": "aug",
+      "x": 631.8,
+      "y": 462.1
+    },
+    {
+      "id": "E7",
+      "label": "E7",
+      "type": "dom7",
+      "x": 569,
+      "y": 445.3
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "type": "maj",
+      "x": 560,
+      "y": 677.1
+    },
+    {
+      "id": "B+",
+      "label": "B+",
+      "type": "aug",
+      "x": 569.7,
+      "y": 569.7
+    },
+    {
+      "id": "B7",
+      "label": "B7",
+      "type": "dom7",
+      "x": 523.7,
+      "y": 523.7
+    },
+    {
+      "id": "Gb",
+      "label": "Gb",
+      "type": "maj",
+      "x": 400,
+      "y": 720
+    },
+    {
+      "id": "Gb+",
+      "label": "Gb+",
+      "type": "aug",
+      "x": 462.1,
+      "y": 631.8
+    },
+    {
+      "id": "Gb7",
+      "label": "Gb7",
+      "type": "dom7",
+      "x": 445.3,
+      "y": 569
+    },
+    {
+      "id": "Db",
+      "label": "Db",
+      "type": "maj",
+      "x": 240,
+      "y": 677.1
+    },
+    {
+      "id": "Db+",
+      "label": "Db+",
+      "type": "aug",
+      "x": 337.9,
+      "y": 631.8
+    },
+    {
+      "id": "Db7",
+      "label": "Db7",
+      "type": "dom7",
+      "x": 354.7,
+      "y": 569
+    },
+    {
+      "id": "Ab",
+      "label": "Ab",
+      "type": "maj",
+      "x": 122.9,
+      "y": 560
+    },
+    {
+      "id": "Ab+",
+      "label": "Ab+",
+      "type": "aug",
+      "x": 230.3,
+      "y": 569.7
+    },
+    {
+      "id": "Ab7",
+      "label": "Ab7",
+      "type": "dom7",
+      "x": 276.3,
+      "y": 523.7
+    },
+    {
+      "id": "Eb",
+      "label": "Eb",
+      "type": "maj",
+      "x": 80,
+      "y": 400
+    },
+    {
+      "id": "Eb+",
+      "label": "Eb+",
+      "type": "aug",
+      "x": 168.2,
+      "y": 462.1
+    },
+    {
+      "id": "Eb7",
+      "label": "Eb7",
+      "type": "dom7",
+      "x": 231,
+      "y": 445.3
+    },
+    {
+      "id": "Bb",
+      "label": "Bb",
+      "type": "maj",
+      "x": 122.9,
+      "y": 240
+    },
+    {
+      "id": "Bb+",
+      "label": "Bb+",
+      "type": "aug",
+      "x": 168.2,
+      "y": 337.9
+    },
+    {
+      "id": "Bb7",
+      "label": "Bb7",
+      "type": "dom7",
+      "x": 231,
+      "y": 354.7
+    },
+    {
+      "id": "F",
+      "label": "F",
+      "type": "maj",
+      "x": 240,
+      "y": 122.9
+    },
+    {
+      "id": "F+",
+      "label": "F+",
+      "type": "aug",
+      "x": 230.3,
+      "y": 230.3
+    },
+    {
+      "id": "F7",
+      "label": "F7",
+      "type": "dom7",
+      "x": 276.3,
+      "y": 276.3
+    }
+  ],
+  "edges": [
+    {
+      "from": "C",
+      "to": "C+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "C",
+      "to": "C7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "C7",
+      "to": "C+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "C7",
+      "to": "F7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "C+",
+      "to": "F",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "G",
+      "to": "G+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "G",
+      "to": "G7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "G7",
+      "to": "G+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "G7",
+      "to": "C7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "G+",
+      "to": "C",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "D",
+      "to": "D+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "D",
+      "to": "D7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "D7",
+      "to": "D+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "D7",
+      "to": "G7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "D+",
+      "to": "G",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "A",
+      "to": "A+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "A",
+      "to": "A7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "A7",
+      "to": "A+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "A7",
+      "to": "D7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "A+",
+      "to": "D",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "E",
+      "to": "E+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "E",
+      "to": "E7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "E7",
+      "to": "E+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "E7",
+      "to": "A7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "E+",
+      "to": "A",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "B",
+      "to": "B+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "B",
+      "to": "B7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "B7",
+      "to": "B+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "B7",
+      "to": "E7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "B+",
+      "to": "E",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "Gb",
+      "to": "Gb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Gb",
+      "to": "Gb7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "Gb7",
+      "to": "Gb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Gb7",
+      "to": "B7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "Gb+",
+      "to": "B",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "Db",
+      "to": "Db+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Db",
+      "to": "Db7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "Db7",
+      "to": "Db+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Db7",
+      "to": "Gb7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "Db+",
+      "to": "Gb",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "Ab",
+      "to": "Ab+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Ab",
+      "to": "Ab7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "Ab7",
+      "to": "Ab+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Ab7",
+      "to": "Db7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "Ab+",
+      "to": "Db",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "Eb",
+      "to": "Eb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Eb",
+      "to": "Eb7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "Eb7",
+      "to": "Eb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Eb7",
+      "to": "Ab7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "Eb+",
+      "to": "Ab",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "Bb",
+      "to": "Bb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Bb",
+      "to": "Bb7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "Bb7",
+      "to": "Bb+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "Bb7",
+      "to": "Eb7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "Bb+",
+      "to": "Eb",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "F",
+      "to": "F+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "F",
+      "to": "F7",
+      "kind": "tension",
+      "bidirectional": false
+    },
+    {
+      "from": "F7",
+      "to": "F+",
+      "kind": "color",
+      "bidirectional": false
+    },
+    {
+      "from": "F7",
+      "to": "Bb7",
+      "kind": "chain",
+      "bidirectional": false
+    },
+    {
+      "from": "F+",
+      "to": "Bb",
+      "kind": "resolve",
+      "bidirectional": false
+    },
+    {
+      "from": "C+",
+      "to": "D+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "G+",
+      "to": "A+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "D+",
+      "to": "E+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "A+",
+      "to": "B+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "E+",
+      "to": "Gb+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "B+",
+      "to": "Db+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "Gb+",
+      "to": "Ab+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "Db+",
+      "to": "Eb+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "Ab+",
+      "to": "Bb+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "Eb+",
+      "to": "F+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "Bb+",
+      "to": "C+",
+      "kind": "petal",
+      "bidirectional": true
+    },
+    {
+      "from": "F+",
+      "to": "G+",
+      "kind": "petal",
+      "bidirectional": true
+    }
+  ]
+}
