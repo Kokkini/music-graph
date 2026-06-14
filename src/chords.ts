@@ -209,7 +209,7 @@ export const DEFAULT_GRAPH_ID = "folk";
 
 export async function loadWheelData(graphId: string = DEFAULT_GRAPH_ID): Promise<WheelData> {
   const info = GRAPHS.find((g) => g.id === graphId) ?? GRAPHS[0];
-  const res = await fetch(`/${info.file}`, { cache: "no-store" });
+  const res = await fetch(`${import.meta.env.BASE_URL}${info.file}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load ${info.file}: ${res.status}`);
   const json = (await res.json()) as WheelDataJson;
   return buildWheelData(json);

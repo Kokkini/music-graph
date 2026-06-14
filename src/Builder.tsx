@@ -67,7 +67,7 @@ export function Builder() {
   const dragRef = useRef<DragState | null>(null);
 
   useEffect(() => {
-    fetch("/wheel-data.json", { cache: "no-store" })
+    fetch(`${import.meta.env.BASE_URL}wheel-data.json`, { cache: "no-store" })
       .then(async (r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return (await r.json()) as WheelDataJson;
@@ -202,7 +202,7 @@ export function Builder() {
 
   function resetPositions() {
     if (!confirm("Reset all node positions to defaults?")) return;
-    fetch("/wheel-data.json", { cache: "no-store" })
+    fetch(`${import.meta.env.BASE_URL}wheel-data.json`, { cache: "no-store" })
       .then((r) => r.json() as Promise<WheelDataJson>)
       .then((d) => setNodes(d.nodes));
   }
