@@ -249,117 +249,129 @@ function Player() {
           <h1>Music Graph</h1>
           <p>Click a chord — it loops. Click another to glide into the next.</p>
         </div>
-        <div className="controls">
-          <label className="slider">
-            Tempo
-            <input
-              type="range"
-              min={50}
-              max={120}
-              value={bpm}
-              onChange={(e) => setBpm(Number(e.target.value))}
-            />
-            <span className="bpm">{bpm} BPM</span>
-          </label>
-          <label className="slider" title={GRAPHS.find((g) => g.id === graphId)?.description}>
-            Graph
-            <select
-              value={graphId}
-              onChange={(e) => setGraphId(e.target.value)}
-              className="instrument-select"
-            >
-              {GRAPHS.map((g) => (
-                <option key={g.id} value={g.id}>{g.label}</option>
-              ))}
-            </select>
-          </label>
-          <label className="slider" title="Instrument">
-            Voice
-            <select
-              value={instrument}
-              onChange={(e) => setInstrumentState(e.target.value as Instrument)}
-              className="instrument-select"
-            >
-              {INSTRUMENTS.map((i) => (
-                <option key={i.id} value={i.id}>{i.label}</option>
-              ))}
-            </select>
-          </label>
-          <label className="slider" title="Arpeggio pattern">
-            Pattern
-            <select
-              value={pattern}
-              onChange={(e) => setPatternState(e.target.value as Pattern)}
-              className="instrument-select"
-            >
-              {PATTERNS.map((p) => (
-                <option key={p.id} value={p.id}>{p.label}</option>
-              ))}
-            </select>
-          </label>
-          <label className="toggle" title="Play a melody line over the chords">
-            <input
-              type="checkbox"
-              checked={melody}
-              onChange={(e) => setMelodyState(e.target.checked)}
-            />
-            Melody
-          </label>
-          <label className="slider" title="Minimum beats per chord">
-            Min
-            <input
-              type="range"
-              min={1}
-              max={16}
-              value={minBeats}
-              onChange={(e) => setMinBeats(Number(e.target.value))}
-            />
-            <span className="bpm">{minBeats}</span>
-          </label>
-          <label className="slider" title="Maximum beats per chord">
-            Max
-            <input
-              type="range"
-              min={1}
-              max={16}
-              value={maxBeats}
-              onChange={(e) => setMaxBeats(Number(e.target.value))}
-            />
-            <span className="bpm">{maxBeats}</span>
-          </label>
-          <button
-            className={random ? "primary" : "ghost"}
-            onClick={() => setRandom((v) => !v)}
-            title="Auto-traverse the graph"
-          >
-            {random ? "■ Random" : "▶ Random"}
-          </button>
-          {random && homeKey && data?.chordById[homeKey] && (
-            <span
-              className="slider"
-              title="Home key — the random walk is biased to return here"
-              style={{ color: data.chordById[homeKey].color }}
-            >
-              Home: {data.chordById[homeKey].label}
-            </span>
-          )}
-          {activeId && (
-            <button className="ghost" onClick={handleStop} title="Stop (Space)">
-              Stop
-            </button>
-          )}
-          {!audioReady && (
-            <button onClick={initAudio} className="primary">
-              Enable sound
-            </button>
-          )}
-          <a className="ghost" href="?builder=1" style={{ textDecoration: "none" }}>
-            Edit graph →
-          </a>
-        </div>
+        <a className="ghost" href="?builder=1" style={{ textDecoration: "none" }}>
+          Edit graph →
+        </a>
       </header>
 
       <main className="stage">
+        <aside className="settings">
+          <div className="actions">
+            <button
+              className={`cta ${random ? "active" : ""}`}
+              onClick={() => setRandom((v) => !v)}
+              title="Auto-traverse the graph"
+            >
+              {random ? "■ Stop Random" : "▶ Random Walk"}
+            </button>
+            <button
+              className="secondary"
+              onClick={handleStop}
+              disabled={!activeId}
+              title="Stop (Space)"
+            >
+              ■ Stop
+            </button>
+            {!audioReady && (
+              <button onClick={initAudio} className="ghost-action">
+                Enable sound
+              </button>
+            )}
+            {random && homeKey && data?.chordById[homeKey] && (
+              <span
+                className="home-tag"
+                title="Home key — the random walk is biased to return here"
+                style={{ color: data.chordById[homeKey].color }}
+              >
+                Home: {data.chordById[homeKey].label}
+              </span>
+            )}
+          </div>
+
+          <div className="settings-fields">
+            <label className="field">
+              <span className="field-head">Tempo<span className="val">{bpm} BPM</span></span>
+              <input
+                type="range"
+                min={50}
+                max={120}
+                value={bpm}
+                onChange={(e) => setBpm(Number(e.target.value))}
+              />
+            </label>
+
+            <label className="field" title={GRAPHS.find((g) => g.id === graphId)?.description}>
+              <span className="field-head">Graph</span>
+              <select
+                value={graphId}
+                onChange={(e) => setGraphId(e.target.value)}
+                className="instrument-select"
+              >
+                {GRAPHS.map((g) => (
+                  <option key={g.id} value={g.id}>{g.label}</option>
+                ))}
+              </select>
+            </label>
+
+            <label className="field" title="Instrument">
+              <span className="field-head">Voice</span>
+              <select
+                value={instrument}
+                onChange={(e) => setInstrumentState(e.target.value as Instrument)}
+                className="instrument-select"
+              >
+                {INSTRUMENTS.map((i) => (
+                  <option key={i.id} value={i.id}>{i.label}</option>
+                ))}
+              </select>
+            </label>
+
+            <label className="field" title="Arpeggio pattern">
+              <span className="field-head">Pattern</span>
+              <select
+                value={pattern}
+                onChange={(e) => setPatternState(e.target.value as Pattern)}
+                className="instrument-select"
+              >
+                {PATTERNS.map((p) => (
+                  <option key={p.id} value={p.id}>{p.label}</option>
+                ))}
+              </select>
+            </label>
+
+            <label className="field row" title="Play a melody line over the chords">
+              <input
+                type="checkbox"
+                checked={melody}
+                onChange={(e) => setMelodyState(e.target.checked)}
+              />
+              <span>Melody</span>
+            </label>
+
+            <label className="field" title="Minimum beats per chord">
+              <span className="field-head">Min beats<span className="val">{minBeats}</span></span>
+              <input
+                type="range"
+                min={1}
+                max={16}
+                value={minBeats}
+                onChange={(e) => setMinBeats(Number(e.target.value))}
+              />
+            </label>
+
+            <label className="field" title="Maximum beats per chord">
+              <span className="field-head">Max beats<span className="val">{maxBeats}</span></span>
+              <input
+                type="range"
+                min={1}
+                max={16}
+                value={maxBeats}
+                onChange={(e) => setMaxBeats(Number(e.target.value))}
+              />
+            </label>
+          </div>
+        </aside>
+
         <div className="wheel-wrap">
           <Wheel
             data={data}
