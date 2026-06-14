@@ -246,7 +246,7 @@ function Player() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <h1>Chord Wheel</h1>
+          <h1>Music Graph</h1>
           <p>Click a chord — it loops. Click another to glide into the next.</p>
         </div>
         <div className="controls">
